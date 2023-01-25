@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "OPR",
+			"path": "."
+		},
+		{
+			"name": "images",
+			"path": "../portfolio/images"
+		},
+		{
+			"name": "assets",
+			"path": "../portfolio/assets"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "OPR"
+	}
+}
