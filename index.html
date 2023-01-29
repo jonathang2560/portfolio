@@ -1,203 +1,225 @@
-<!DOCTYPE HTML>
-<!--
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Jonathan's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="">
+	<title>Jonathan's Portfolio</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://kit.fontawesome.com/aa63f18da0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="bg">
+	<div class="header">
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">Top</a></li>
-					<li><a href="#work">Work</a></li>
+		<!-- <img src="Screenshot 2023-01-25 at 7.25.08 PM.png" alt=""> -->
+		<div class="container">
+			<nav>
+				<h1>Jonathan's <span>Portfolio</span></h1>
+				<ul id="sidemenu">
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
 					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#contact">Contact</a></li>
+					<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
 				</ul>
+				<i class="fa-solid fa-bars" onclick="openmenu()"></i>
 			</nav>
-
-		<!-- Home -->
-			<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit pic"><img src="../IMG_4853 Small.jpg" alt="profile" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1>Hi There, I'm Jonathan</h1>
-							</header>
-							<p>
-								My name is Jonathan Guzman and I am a software engineer with experience in designing, developing, testing, and maintaining software and systems. I am passionate about creating and improving digital solutions for clients and internal projects. I am currently working as a software engineer at Resilient Coders Agency and also working as a tire technician at Discount Tire.							</p>
-							<p>
-							I am a quick learner, and I am always looking to improve my skills and stay up-to-date with the latest technologies and industry trends. I am a team player and I thrive in collaborative environments. I am always looking for challenging projects to work on and opportunities to learn and grow as a software engineer.
-							</p>
-							<p>
-							In my free time, I enjoy learning about new technologies and experimenting with different programming languages. I also enjoy hiking and playing video games.
-							</p>							<a href="#work" class="button large scrolly">Learn about what I do</a>
-						</div>
-					</div>
-				</div>	
-			</article>
-
-		<!-- Work -->
-			<article id="work" class="wrapper style2">
-				<div class="container">
-					<header>
-						<h2>Here's all the stuff I do.</h2>
-						<p>I enjoy keeping up with current and upcoming industry tools, frameworks and trends. I'm most comfortable with the MERN JavaScript stack but always happy to add a new tool to my belt!</p>
-					</header>
-					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon featured"><img src="img/frontend.jpg" alt="code thing"></span>
-								<h3>Frontend</h3>
-								<p> React, HTML5/CSS, Vanilla JavaScript</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon featured"><img src="img/backend.jpg" alt="idk"></span>
-								<h3>Backend</h3>
-								<p> Node.js, Express, and MongoDB</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon featured"><img src="img/everthingelse.jpg" alt=""></span>
-								<h3>and All the Rest</h3>
-								<p> Design, testing, and deployment</p>
-							</section>
-						</div>
-					</div>
-					<footer>
-
-						<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
-					</footer>
+			<div class="header-text">
+				<p>Software Engineer</p>
+				<h1>Hi👋, I'm Jonathan</h1>
+			</div>
+		</div>
+	</div>
+	</div>
+<!-- about -->
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="img/bg3.png" alt="">
 				</div>
-			</article>
+				<div class="about-col-2">
+					<h1 class="sub-title">About me</h1>
+					<p>
+						My name is Jonathan Guzman and I am a software engineer with experience in designing, developing, testing, and maintaining software and systems. I am passionate about creating and improving digital solutions for clients and internal projects. I am currently a Software Engineer at Resilient Coders Agency and also working as a Tire Technician at Discount Tire.
+					</p>
+					<p>
+						I am a quick learner, and I am always looking to improve my skills and stay up-to-date with the latest technologies and industry trends. I am a team player and I thrive in collaborative environments. I am always looking for challenging projects to work on and opportunities to learn and grow as a software engineer.
+					</p>
+					<p>
+						In my free time, I enjoy learning about new technologies and experimenting with different programming languages. I also enjoy hiking and playing video games.
+					</p>
+					<ul class="titles">
+						<li class="links active" onclick="opentab('skills')">Skills</li>
+						<li class="links" onclick="opentab('experience')">Experience</li>
+						<li class="links" onclick="opentab('education')">Education</li>
+					</ul>
+					<div class="contents active-tab" id="skills">
+						<ul>
+							<li><span>Front-End</span><br>HTML, CSS, JavaScript</li>
+							<li><span>Back-End</span><br>EJS, MongoDB, Express, Node.js</li>
+							<li><span>Web Design</span><br>Figma and Adobe XD</li>
 
-		<!-- Portfolio -->
-			<article id="portfolio" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Here’s some stuff I made recently.</h2>
-						<p>Check these out. Let me know what you think!</p>
-					</header>
-					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://panerafake-by-jonathan.netlify.app/" class="image featured"><img src="img/Screenshot 2023-01-24 at 8.00.47 PM.png" alt="" /></a>
-								<h3><a href="https://panerafake-by-jonathan.netlify.app/">Panera Not-Bread</a></h3>
-								<p>Panera Bread landing page mock.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://fakebook-by-jonathan.netlify.app/" class="image featured"><img src="../img/Screenshot 2023-01-23 at 2.34.08 PM.png" alt="" /></a>
-								<h3><a href="https://fakebook-by-jonathan.netlify.app/">Mock FaceBook</a></h3>
-								<p>Facebook look-alike.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://margaritasfordays.netlify.app/" class="image featured"><img src="images/Screenshot 2023-01-23 at 7.30.55 PM.png" alt="" /></a>
-								<h3><a href="https://margaritasfordays.netlify.app/">Margarita Recipes</a></h3>
-								<p>Margarita recipes.</p>
-							</article>
-						</div>
-					</div>
-					<footer>
-
-						<a href="#contact" class="button large scrolly">Get in touch with me</a>
-					</footer>
-				</div>
-			</article>
-
-		<!-- Contact -->
-			<article id="contact" class="wrapper style4">
-				<div class="container medium">
-					<header>
-						<h2>Have me make stuff for you.</h2>
-
-					</header>
-					<div class="row">
-						<div class="col-12">
-							<form method="post" action="#" onsubmit="sendEmail(); reset(); return false"> 
-								<div class="row">
-									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
-									</div>
-									<div class="col-12">
-										<input type="text"name="message" id="message" size="5" placeholder="Message"></input>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-											<li><input type="reset" value="Clear Form" class="alt" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</div>
-						<div class="col-12">
-							<hr />
-							<h3>Find me on ...</h3>
-							<ul class="social">
-								<li><a href="https://twitter.com/itsnotjg_" ><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.linkedin.com/in/jonathan-guzman-688502230/"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/jonathang2560"><span class="label">Github</span></a></li>
-							</ul>
-							<hr />
-						</div>
-					</div>
-					<footer>
-						<ul id="copyright">
-							<li>&copy; Jonathan Guzman. All rights reserved.</li>
 						</ul>
-					</footer>
-				</div>
-			</article>
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+					</div>
+					<div class="contents" id="experience">
+						<ul>
+							<li><span>2021 - Current</span><br>Resilient Coders Agency - Software Engineer Student</li>
+							<li><span>2021 - Current</span><br>Discount Tire - Tire Technician</li>
 
-			<script src=" https://smtpjs.com/v3/smtp.js"></script>
-			<script>
-				function sendEmail(){
-				Email.send({
-					// SecureToken : "ad4f6df8-50b7-4a2f-af11-10427e11415f",
-					Host : "smtp.elasticemail.com",
-					Username : "jonathang2560@gmail.com",
-					Password : "A69AAAC12DF98E10D596293D38119323A719",
-					From:'jonathang2560@gmail.com',
-					To : document.getElementById('email').value,
-					Subject : "This is the subject",
-					Body : "Name: "+document.getElementById('name').value+
-					'<br> Email: '+document.getElementById('email').value+
-					'<br> Subject: '+document.getElementById('subject').value+
-					'<br> Message: '+document.getElementById('message').value
-				}).then(
-				message => alert('Sent')
-				);
-				}
-			</script>
-	</body>
+						</ul>
+					</div>
+					<div class="contents" id="education">
+						<ul>
+							<li><span>2021-2022</span><br>University of Texas at Austin - AP Class</li>
+							<li><span>2021-2022</span><br>Lamar Institute of Technology - AP Class</li>
+							<li><span>2018-2022</span><br>Harmony Science Academy - Highschool</li>
+
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- services -->
+	 <div id="services">
+		 <div class="container">
+			<h1 class="sub-title">More on my skills...</h1>
+			<div class="services-list">
+				<div>
+					<i class="fa-solid fa-code"></i>
+					<h2>Front-End</h2>
+					<p> 
+						I use technologies like HTML, CSS and JavaScript to build and implement the design of a
+						 website, making sure it is interactive, responsive and easy to navigate. I also test and 
+						 debug website for compatibility across different browsers and devices.
+					</p>
+
+				</div>
+				<div>
+					<i class="fa-sharp fa-solid fa-terminal"></i>					
+					<h2>Back-End</h2>
+					<p>I use programming languages like EJS, Node.js, MongoDB, and frameworks like Express to build the functionality of a website, such as database integration and server-side logic. I also ensure the website is secure, fast and able to handle a large amount of traffic.</p>					
+
+				</div>
+				<div>
+					<i class="fa-solid fa-pen-ruler"></i>
+
+					<h2>Web Design</h2>
+					<p>I create visually appealing and user-friendly websites. I use tools like Adobe XD, Figma, HTML, CSS, JavaScript and work with web developers to make sure the website is functional and optimized.</p>
+				</div>
+			</div>
+
+		 </div>
+	 </div>
+<!-- Portfolio -->
+<div class="container" id="portfolio">
+	<h1 class="sub-title">Projects</h1>
+	<div class="work-list">
+		<div class="work">
+			<a href=""><img src="img/fakebook.png" alt=""></a>
+			<div class="layer">
+				<h3>Mock FaceBook</h3>
+				<p>Facebook look-alike.</p>
+				<a href="https://fakebook-by-jonathan.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+			</div>
+		</div>
+		<div class="work">
+			<a href=""><img src="img/margarita.png" alt=""></a>
+			<div class="layer">
+				<h3>Margarita Recipes</h3>
+				<p>Margarita Recipes</p>
+				<a href="https://margaritasfordays.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+			</div>
+		</div>
+		<div class="work">
+			<a href=""><img src="img/panera.png" alt=""></a>
+			<div class="layer">
+				<h3>Panera Not-Bread</h3>
+				<p>Panera Bread landing page mock.</p>
+				<a href="https://panerafake-by-jonathan.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+			</div>
+		</div>
+	</div>
+	<!-- <a href="#" class="btn">See More</a> -->
+</div>
+<!-- contact me -->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="left">
+				<h1 class="sub-title">Contact Me</h1>
+				<p><i class="fa-solid fa-envelope"></i>jonathang2560@gmail.com</p>
+				<p><i class="fa-solid fa-phone"></i>(409)-665-7471</p>
+				<div class="social">
+					<a href="https://twitter.com/itsnotjg_"><i class="fa-brands fa-twitter"></i></a>
+					<a href="https://github.com/jonathang2560"><i class="fa-brands fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/jonathan-guzman-688502230/"><i class="fa-brands fa-linkedin"></i></a>
+
+				</div>
+				<a href="Jonathan's CV.pdf" download class="btn">Download CV</a>
+			</div>
+			<div class="right">
+				<form name="submit-to-google-sheet">
+					<input type="text" name="name" placeholder="Your Name"required>
+					<input type="text" name="email" placeholder="Your Email"required>
+					<textarea name="message" rows="5" placeholder="Your Message"></textarea>
+					<button type="submit" class="btn btn2">Submit</button>
+				</form>
+				<span id="message"></span>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>&copy; Jonathan Guzman. All rights reserved.</p>
+	</div>
+</div>
+<script>
+	var links=document.getElementsByClassName('links')
+	var contents=document.getElementsByClassName('contents')
+	function opentab(tabname){
+		for(link of links){
+			link.classList.remove('active')
+		}
+		for(content of contents){
+			content.classList.remove('active-tab')
+		}
+		event.currentTarget.classList.add('active')
+		document.getElementById(tabname).classList.add('active-tab')
+	}
+
+</script>
+	
+	<script>
+	function openmenu() {
+  document.getElementById("sidemenu").style.display = "block";
+}
+
+function closemenu() {
+  document.getElementById("sidemenu").style.display = "none";
+}
+
+	</script>
+	<script>
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbx5k52HrwjzpMc7_eevSv8ITzk1V0q8z88zG0V-p_5Hy0LYDBfJO0dmwBX63XgKkCHohw/exec'
+		const form = document.forms['submit-to-google-sheet']
+		const message=document.getElementById('message')
+	  
+		form.addEventListener('submit', e => {
+		  e.preventDefault()
+		  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+			.then(response => {
+				message.innerHTML='Message Sent Successfully!'
+				setTimeout(function(){
+					message.innerHTML=''
+				},5000)
+				form.reset()
+			})
+			.catch(error => console.error('Error!', error.message))
+		})
+	  </script>
+</body>
 </html>
