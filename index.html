@@ -10,173 +10,302 @@
 	<script src="https://kit.fontawesome.com/aa63f18da0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div class="bg">
-	<div class="header">
 
-		<!-- <img src="Screenshot 2023-01-25 at 7.25.08 PM.png" alt=""> -->
-		<div class="container">
-			<nav>
-				<h1>Jonathan's <span>Portfolio</span></h1>
-				<ul id="sidemenu">
-					<li><a href="#about">About</a></li>
-					<li><a href="#services">Services</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-				</ul>
-				<i class="fa-solid fa-bars" onclick="openmenu()"></i>
-			</nav>
-			<div class="header-text">
-				<p>Software Engineer</p>
-				<h1>Hi👋, I'm Jonathan</h1>
-			</div>
+
+
+
+<!-- header section -->
+<div class="header">
+	<!-- container for header content -->
+	<div class="container">
+		<!-- navigation menu -->
+		<nav>
+			<!-- header text -->
+			<h1>Jonathan's <span>Portfolio</span></h1>
+			<!-- side menu -->
+			<ul id="sidemenu">
+				<!-- links to different sections -->
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<!-- icon to close side menu -->
+				<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+			</ul>
+			<!-- icon to open side menu -->
+			<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+		</nav>
+		<!-- header text content -->
+		<div class="header-text">
+			<!-- tagline -->
+			<p>Software Engineer</p>
+			<!-- greeting -->
+			<h1>Hi👋, I'm Jonathan</h1>
 		</div>
 	</div>
-	</div>
+</div>
+
+
+
+
+
+
+
 <!-- about -->
-	<div id="about">
-		<div class="container">
-			<div class="row">
-				<div class="about-col-1">
-					<img src="img/bg3.png" alt="">
-				</div>
-				<div class="about-col-2">
-					<h1 class="sub-title">About me</h1>
-					<p>
-						My name is Jonathan Guzman and I am a software engineer with experience in designing, developing, testing, and maintaining software and systems. I am passionate about creating and improving digital solutions for clients and internal projects. I am currently a Software Engineer at Resilient Coders Agency and also working as a Tire Technician at Discount Tire.
-					</p>
-					<p>
-						I am a quick learner, and I am always looking to improve my skills and stay up-to-date with the latest technologies and industry trends. I am a team player and I thrive in collaborative environments. I am always looking for challenging projects to work on and opportunities to learn and grow as a software engineer.
-					</p>
-					<p>
-						In my free time, I enjoy learning about new technologies and experimenting with different programming languages. I also enjoy hiking and playing video games.
-					</p>
-					<ul class="titles">
-						<li class="links active" onclick="opentab('skills')">Skills</li>
-						<li class="links" onclick="opentab('experience')">Experience</li>
-						<li class="links" onclick="opentab('education')">Education</li>
-					</ul>
-					<div class="contents active-tab" id="skills">
-						<ul>
-							<li><span>Front-End</span><br>HTML, CSS, JavaScript</li>
-							<li><span>Back-End</span><br>EJS, MongoDB, Express, Node.js</li>
-							<li><span>Web Design</span><br>Figma and Adobe XD</li>
 
-						</ul>
-					</div>
-					<div class="contents" id="experience">
-						<ul>
-							<li><span>2021 - Current</span><br>Resilient Coders Agency - Software Engineer Student</li>
-							<li><span>2021 - Current</span><br>Discount Tire - Tire Technician</li>
-
-						</ul>
-					</div>
-					<div class="contents" id="education">
-						<ul>
-							<li><span>2021-2022</span><br>University of Texas at Austin - AP Class</li>
-							<li><span>2021-2022</span><br>Lamar Institute of Technology - AP Class</li>
-							<li><span>2018-2022</span><br>Harmony Science Academy - Highschool</li>
-
-						</ul>
-					</div>
-				</div>
-
-			</div>
+<div id="about">
+	<div class="container">
+	  <!-- Start of the row -->
+	  <div class="row">
+		<!-- Start of the first column -->
+		<div class="about-col-1">
+		  <!-- Image for the about section -->
+		  <img src="img/bg3.png" alt="">
+		</div>
+		<!-- End of the first column -->
+		
+		<!-- Start of the second column -->
+		<div class="about-col-2">
+		  <!-- Subtitle for the About section -->
+		  <h1 class="sub-title">About me</h1>
+		  
+		  <!-- Start of the personal information -->
+		  <p>
+			My name is Jonathan Guzman and I am a software engineer with experience in designing, developing, testing, and maintaining software and systems. I am passionate about creating and improving digital solutions for clients and internal projects. I am currently a Software Engineer at Resilient Coders Agency and also working as a Tire Technician at Discount Tire.
+		  </p>
+		  <p>
+			I am a quick learner, and I am always looking to improve my skills and stay up-to-date with the latest technologies and industry trends. I am a team player and I thrive in collaborative environments. I am always looking for challenging projects to work on and opportunities to learn and grow as a software engineer.
+		  </p>
+		  <p>
+			In my free time, I enjoy learning about new technologies and experimenting with different programming languages. I also enjoy hiking and playing video games.
+		  </p>
+		  <!-- End of the personal information -->
+		  
+		  <!-- Start of the navigation menu -->
+		  <ul class="titles">
+			<!-- Link for the Skills section -->
+			<li class="links active" onclick="opentab('skills')">Skills</li>
+			
+			<!-- Link for the Experience section -->
+			<li class="links" onclick="opentab('experience')">Experience</li>
+			
+			<!-- Link for the Education section -->
+			<li class="links" onclick="opentab('education')">Education</li>
+		  </ul>
+		  <!-- End of the navigation menu -->
+		  
+		  <!-- Start of the Skills section -->
+		  <div class="contents active-tab" id="skills">
+			<!-- List of skills -->
+			<ul>
+			  <li><span>Front-End</span><br>HTML, CSS, JavaScript</li>
+			  <li><span>Back-End</span><br>EJS, MongoDB, Express, Node.js</li>
+			  <li><span>Web Design</span><br>Figma and Adobe XD</li>
+			</ul>
+		  </div>
+		  <!-- End of the Skills section -->
+		  
+		  <!-- Start of the Experience section -->
+		  <div class="contents" id="experience">
+			<!-- List of experience -->
+			<ul>
+			  <li><span>2021 - Current</span><br>Resilient Coders Agency - Software Engineer Student</li>
+			  <li><span>2021 - Current</span><br>Discount Tire - Tire Technician</li>
+			</ul>
+		  </div>
+		  <!-- End of the Experience section -->
+		  
+		  <!-- Start of the Education section -->
+		  <div class="contents" id="education">
 		</div>
 	</div>
-	<!-- services -->
-	 <div id="services">
-		 <div class="container">
-			<h1 class="sub-title">More on my skills...</h1>
-			<div class="services-list">
-				<div>
-					<i class="fa-solid fa-code"></i>
-					<h2>Front-End</h2>
-					<p> 
-						I use technologies like HTML, CSS and JavaScript to build and implement the design of a
-						 website, making sure it is interactive, responsive and easy to navigate. I also test and 
-						 debug website for compatibility across different browsers and devices.
-					</p>
+	</div>
+</div>
+</div>
 
-				</div>
-				<div>
-					<i class="fa-sharp fa-solid fa-terminal"></i>					
-					<h2>Back-End</h2>
-					<p>I use programming languages like EJS, Node.js, MongoDB, and frameworks like Express to build the functionality of a website, such as database integration and server-side logic. I also ensure the website is secure, fast and able to handle a large amount of traffic.</p>					
 
-				</div>
-				<div>
-					<i class="fa-solid fa-pen-ruler"></i>
 
-					<h2>Web Design</h2>
-					<p>I create visually appealing and user-friendly websites. I use tools like Adobe XD, Figma, HTML, CSS, JavaScript and work with web developers to make sure the website is functional and optimized.</p>
-				</div>
-			</div>
 
-		 </div>
-	 </div>
+
+
+
+
+<div id="services">
+	<div class="container">
+	  <!-- Sub-title for the section -->
+	  <h1 class="sub-title">More on my skills...</h1>
+	  
+	  <!-- List of services -->
+	  <div class="services-list">
+		<!-- Front-End service -->
+		<div>
+		  <!-- Icon for the service -->
+		  <i class="fa-solid fa-code"></i>
+		  <h2>Front-End</h2>
+		  <p>
+			<!-- Description of Front-End service -->
+			I use technologies like HTML, CSS, and JavaScript to build and implement the design of a website, making sure it is interactive, responsive, and easy to navigate. I also test and debug the website for compatibility across different browsers and devices.
+		  </p>
+		</div>
+		
+		<!-- Back-End service -->
+		<div>
+		  <!-- Icon for the service -->
+		  <i class="fa-sharp fa-solid fa-terminal"></i>
+		  <h2>Back-End</h2>
+		  <p>
+			<!-- Description of Back-End service -->
+			I use programming languages like EJS, Node.js, MongoDB, and frameworks like Express to build the functionality of a website, such as database integration and server-side logic. I also ensure the website is secure, fast, and able to handle a large amount of traffic.
+		  </p>
+		</div>
+		
+		<!-- Web Design service -->
+		<div>
+		  <!-- Icon for the service -->
+		  <i class="fa-solid fa-pen-ruler"></i>
+		  <h2>Web Design</h2>
+		  <p>
+			<!-- Description of Web Design service -->
+			I create visually appealing and user-friendly websites. I use tools like Adobe XD, Figma, HTML, CSS, JavaScript, and work with web developers to make sure the website is functional and optimized.
+		  </p>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+
+
+
+
 <!-- Portfolio -->
 <div class="container" id="portfolio">
+	<!-- sub-title element with class "sub-title" -->
 	<h1 class="sub-title">Projects</h1>
+  
+	<!-- work-list element with class "work-list" -->
 	<div class="work-list">
-		<div class="work">
-			<a href=""><img src="img/fakebook.png" alt=""></a>
-			<div class="layer">
-				<h3>Mock FaceBook</h3>
-				<p>Facebook look-alike.</p>
-				<a href="https://fakebook-by-jonathan.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-			</div>
+	  <!-- work element with class "work" -->
+	  <div class="work">
+		<!-- link to project image -->
+		<a href=""><img src="img/fakebook.png" alt=""></a>
+		<!-- layer element with class "layer" -->
+		<div class="layer">
+		  <!-- project title -->
+		  <h3>Mock FaceBook</h3>
+		  <!-- project description -->
+		  <p>Facebook look-alike.</p>
+		  <!-- link to project demo -->
+		  <a href="https://fakebook-by-jonathan.netlify.app/">
+			<!-- icon element using font-awesome class "fa-solid fa-arrow-up-right-from-square" -->
+			<i class="fa-solid fa-arrow-up-right-from-square"></i>
+		  </a>
 		</div>
-		<div class="work">
-			<a href=""><img src="img/margarita.png" alt=""></a>
-			<div class="layer">
-				<h3>Margarita Recipes</h3>
-				<p>Margarita Recipes</p>
-				<a href="https://margaritasfordays.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-			</div>
+	  </div>
+  
+	  <!-- work element with class "work" -->
+	  <div class="work">
+		<!-- link to project image -->
+		<a href=""><img src="img/margarita.png" alt=""></a>
+		<!-- layer element with class "layer" -->
+		<div class="layer">
+		  <!-- project title -->
+		  <h3>Margarita Recipes</h3>
+		  <!-- project description -->
+		  <p>Margarita Recipes</p>
+		  <!-- link to project demo -->
+		  <a href="https://margaritasfordays.netlify.app/">
+			<!-- icon element using font-awesome class "fa-solid fa-arrow-up-right-from-square" -->
+			<i class="fa-solid fa-arrow-up-right-from-square"></i>
+		  </a>
 		</div>
-		<div class="work">
-			<a href=""><img src="img/panera.png" alt=""></a>
-			<div class="layer">
-				<h3>Panera Not-Bread</h3>
-				<p>Panera Bread landing page mock.</p>
-				<a href="https://panerafake-by-jonathan.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-			</div>
+	  </div>
+  
+	  <!-- work element with class "work" -->
+	  <div class="work">
+		<!-- link to project image -->
+		<a href=""><img src="img/panera.png" alt=""></a>
+		<!-- layer element with class "layer" -->
+		<div class="layer">
+		  <!-- project title -->
+		  <h3>Panera Not-Bread</h3>
+		  <!-- project description -->
+		  <p>Panera Bread landing page mock.</p>
+		  <!-- link to project demo -->
+		  <a href="https://panerafake-by-jonathan.netlify.app/">
+			<!-- icon element using font-awesome class "fa-solid fa-arrow-up-right-from-square" -->
+			<i class="fa-solid fa-arrow-up-right-from-square"></i>
+		  </a>
 		</div>
+	  </div>
 	</div>
-	<!-- <a href="#" class="btn">See More</a> -->
-</div>
-<!-- contact me -->
-<div id="contact">
-	<div class="container">
-		<div class="row">
-			<div class="left">
-				<h1 class="sub-title">Contact Me</h1>
-				<p><i class="fa-solid fa-envelope"></i>jonathang2560@gmail.com</p>
-				<p><i class="fa-solid fa-phone"></i>(409)-665-7471</p>
-				<div class="social">
-					<a href="https://twitter.com/itsnotjg_"><i class="fa-brands fa-twitter"></i></a>
-					<a href="https://github.com/jonathang2560"><i class="fa-brands fa-github"></i></a>
-					<a href="https://www.linkedin.com/in/jonathan-guzman-688502230/"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+  
+  
+  
 
+
+
+
+
+<!-- contact me -->
+<!-- Contact section with contact information and form -->
+<div id="contact">
+	<!-- Container for holding the contents of the section -->
+	<div class="container">
+		<!-- Row for holding the left and right sections -->
+		<div class="row">
+			<!-- Left section displaying contact information -->
+			<div class="left">
+				<!-- Sub-title for the section -->
+				<h1 class="sub-title">Contact Me</h1>
+				<!-- Email information -->
+				<p><i class="fa-solid fa-envelope"></i>jonathang2560@gmail.com</p>
+				<!-- Phone number information -->
+				<p><i class="fa-solid fa-phone"></i>(409)-665-7471</p>
+				<!-- Social media links -->
+				<div class="social">
+					<!-- Link to Twitter -->
+					<a href="https://twitter.com/itsnotjg_"><i class="fa-brands fa-twitter"></i></a>
+					<!-- Link to Github -->
+					<a href="https://github.com/jonathang2560"><i class="fa-brands fa-github"></i></a>
+					<!-- Link to LinkedIn -->
+					<a href="https://www.linkedin.com/in/jonathan-guzman-688502230/"><i class="fa-brands fa-linkedin"></i></a>
 				</div>
+				<!-- Button for downloading resume -->
 				<a href="/pdf/Jonathan's CV.pdf" download class="btn">Download Resume</a>
 			</div>
+			<!-- Right section for submitting a message through a form -->
 			<div class="right">
+				<!-- Form for submitting information -->
 				<form name="submit-to-google-sheet">
+					<!-- Input field for name -->
 					<input type="text" name="name" placeholder="Your Name"required>
+					<!-- Input field for email -->
 					<input type="text" name="email" placeholder="Your Email"required>
+					<!-- Textarea field for message -->
 					<textarea name="message" rows="5" placeholder="Your Message"></textarea>
+					<!-- Submit button for the form -->
 					<button type="submit" class="btn btn2">Submit</button>
 				</form>
+				<!-- Span for displaying messages -->
 				<span id="message"></span>
 			</div>
 		</div>
 	</div>
+	<!-- Copyright information -->
 	<div class="copyright">
 		<p>&copy; Jonathan Guzman. All rights reserved.</p>
 	</div>
 </div>
+
+
+
+
+
+
+
+
+
 <script>
 	var links=document.getElementsByClassName('links')
 	var contents=document.getElementsByClassName('contents')

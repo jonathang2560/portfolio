@@ -359,10 +359,7 @@ nav .fa-solid{
     .header-text h1{
         font-size: 30px;
     }
-    /* nav .fa-solid{
-        display: block;
-        font-size: 25px;
-    } */
+
     nav ul{
         display: none;
         background: #0080ff;
@@ -374,16 +371,6 @@ nav .fa-solid{
         padding-top: 50px;
         z-index: 2;
     }
-    /* nav ul li{
-        display: block;
-        margin: 25px;
-    }
-    nav .fa-solid{
-        position: absolute;
-        top: 15px;
-        right: 25px;
-        cursor: pointer;
-    } */
     .sub-title{
         font-size: 35px;
     }
